@@ -4,10 +4,12 @@ import { HomePageControllerComponent } from './home-page-controller/home-page-co
 import { LanguageBarComponent } from './language-bar/language-bar.component';
 import { SnippetAdderComponent } from './snippet-adder/snippet-adder.component';
 import { SnippetCardComponent } from './snippet-card/snippet-card.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ],
   declarations: [
     HomePageControllerComponent,

@@ -1,0 +1,15 @@
+@import '../../../styles/styles.scss';
+
+
+.card-body {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  padding: 1em 2em;
+  margin-bottom: 3em;
+  @include card-box-shadow();
+  @include snipped-card-bg($color-secondary);
+}
+.icon {
+  color: $color-primary;
+ }
