@@ -13,3 +13,8 @@
   -webkit-box-shadow: rgba(0, 0, 0, .10) -5px 5px 2px;
    box-shadow: rgba(0, 0, 0, .10) -5px 5px 2px;
 }
+@mixin border-radius($size){
+  -moz-border-radius:$size;
+  -webkit-border-radius:$size;
+  border-radius:$size;
+}

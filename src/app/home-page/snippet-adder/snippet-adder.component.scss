@@ -1,6 +1,19 @@
 @import '../../../styles/styles.scss';
 
-
+textarea, input {
+  padding: 0.5em;
+  font-family: $font-family-body;
+  color: $color-primary;
+  background-color: $color-base;
+  @include border-radius(0.5em);
+}
+button{
+  padding:1em;
+  color:$color-base;
+  border:none;
+  background:none;
+  font-size:$font-size-lg;
+}
 .card-body {
   display: flex;
   height: 250px;
@@ -10,6 +23,7 @@
   @include card-box-shadow();
   @include snipped-card-bg($color-secondary);
 }
+
 .icon {
   color: $color-primary;
  }

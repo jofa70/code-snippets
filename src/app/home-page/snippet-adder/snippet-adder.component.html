@@ -2,4 +2,30 @@
   <div class="icon">
     <i class="fas fa-plus-circle fa-5x"></i>
   </div>
+
 </div>
+<app-modal-window>
+  <form fxLayout="column" fxLayoutAlign="space-around stretch"
+        fxLayoutGap="0.5em"
+        #snippetForm="ngForm"
+        (ngSubmit)="addSnippet()">
+
+    <div fxFlex fxFlexOrder="1">
+      <label for="name">Name</label>
+      <input fxFlexFill id="name" type="text" class="form-control" required>
+    </div>
+
+    <div fxFlex fxFlexOrder="2">
+      <label for="desc">Description</label>
+      <input fxFlexFill id="desc" type="text" class="form-control" required>
+    </div>
+    <div fxFlex fxFlexOrder="3">
+    <label for="code">Code Snippet</label>
+    <textarea fxFlexFill id="code" class="form-control" required></textarea>
+    </div>
+
+      <div fxLayoutAlign="end center" fxFlexOrder="4">
+        <button type="submit">SAVE</button>
+      </div>
+  </form>
+</app-modal-window>
