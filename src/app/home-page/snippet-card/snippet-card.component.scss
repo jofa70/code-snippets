@@ -1,0 +1,22 @@
+@import '../../../styles/styles.scss';
+
+h1, h2 {
+  font-family: $font-family-header;
+  color: $color-base;
+}
+h1 {
+  font-size: $font-size-lg;
+}
+h2 {
+  font-size: $font-size-reg;
+  overflow-y: auto;
+}
+.card-body {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  padding: 1em 2em;
+  margin-bottom: 3em;
+  @include card-box-shadow();
+  @include snipped-card-bg($color-primary);
+}
