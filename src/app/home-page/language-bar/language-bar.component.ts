@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Languages } from "../models/temp-languages.enum";
 
 @Component({
   selector: 'app-language-bar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguageBarComponent implements OnInit {
 
+languages = new Set<Languages>();
+
   constructor() { }
 
   ngOnInit() {
+    this.languages.add(Languages.typescript);
+    this.languages.add(Languages.css);
   }
 
 }

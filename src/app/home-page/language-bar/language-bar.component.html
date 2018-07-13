@@ -1,3 +1,32 @@
-<p>
-  language-bar works!
-</p>
+<nav fxLayout="row" fxLayoutAlign="end center" [fxShow.xs]="false" id="bar-container" >
+  <div fxFlex="90" fxLayout="row" fxLayoutAlign="start space-evenly" fxLayoutGap="1em"  class="language-container">
+
+    <h2 *ngIf="languages.size === 0" >Start by choosing a Language</h2>
+    <h2 *ngFor="let lang of languages">{{lang}}</h2>
+
+  </div>
+
+  <a fxFlex="10">
+    <i class="fas fa-plus-circle fa-2x"></i>
+  </a>
+</nav>
+
+<nav fxShow = "false" [fxShow.xs] = "true" fxLayout="column"
+     fxLayoutAlign="start center" id="sidebar-container" >
+
+
+    <a fxFlex id="sidenav-toggle">
+      <iclass="fas fa-ellipsis-h fa-2x menu-button ></iclassfas>
+    </a>
+    <div fxFlexAlign="center">
+      <i class="fas fa-plus-circle fa-2x"></i>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="start space-evenly" fxLayoutGap="1em"
+         class="language-container">
+      <h2 *ngFor="let lang of languages">{{lang}}</h2>
+
+
+    </div>
+
+</nav>

@@ -17,6 +17,6 @@ h2 {
   width: 250px;
   padding: 1em 2em;
   margin-bottom: 3em;
-  @include card-box-shadow();
+  @include box-shadow(rgba(0, 0, 0, 0.1) -5px 5px 2px);
   @include snipped-card-bg($color-primary);
 }

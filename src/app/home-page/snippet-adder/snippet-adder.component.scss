@@ -7,7 +7,7 @@ textarea, input {
   background-color: $color-base;
   @include border-radius(0.5em);
 }
-button{
+button {
   padding:1em;
   color:$color-base;
   border:none;
@@ -20,7 +20,7 @@ button{
   width: 250px;
   padding: 1em 2em;
   margin-bottom: 3em;
-  @include card-box-shadow();
+  @include box-shadow(rgba(0, 0, 0, 0.1) -5px 5px 2px);
   @include snipped-card-bg($color-secondary);
 }
 
