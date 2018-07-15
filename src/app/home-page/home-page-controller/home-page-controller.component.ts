@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Languages } from "../models/temp-languages.enum";
+import {Snippet} from "../models/snippet";
 
 
 @Component({
@@ -10,9 +11,9 @@ import { Languages } from "../models/temp-languages.enum";
 export class HomePageControllerComponent implements OnInit {
 
 snippets =[
-  new Snippet(title 'my', desc 'desc', code 'code', Languages.typescript),
-  new Snippet(title 'my', desc 'desc', code 'code', Languages.typescript),
-  new Snippet(title 'my', desc 'desc', code 'code', Languages.typescript)
+  new Snippet(title: 'my', desc: 'desc', code: 'code', Languages.typescript);
+  new Snippet(title: 'my', desc: 'desc', code: 'code', Languages.typescript);
+  new Snippet(title: 'my', desc: 'desc', code: 'code', Languages.typescript);
 ];
 
   constructor() { }

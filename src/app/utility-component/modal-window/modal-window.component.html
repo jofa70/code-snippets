@@ -3,12 +3,12 @@
        fxLayoutAlign="space-between center"
        fxFlexAlign="space-around">
 
-    <div id="close-button">
+    <div id="close-button" (click)="close()">
       <i id="fas fa-times fa-2x">X</i>
     </div>
 
     <div id="header" fxFlexAlign="center end">
-      <h1>header</h1>
+      <h1>{{header}}</h1>
     </div>
 
     <div id="body" fxFlexAlign="stretch">

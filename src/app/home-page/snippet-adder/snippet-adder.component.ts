@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnippetAdderComponent implements OnInit {
 
+  name: string;
+  desc: string;
+  code: string;
+
+  readonly headerText = 'Save Snippet';
+  showModal = false;
+
   constructor() { }
 
   ngOnInit() {
   }
   addSnippet = () => {};
+
+  openModal= () => {
+    this.showModal= true;
+  };
 }

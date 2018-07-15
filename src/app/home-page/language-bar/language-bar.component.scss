@@ -10,9 +10,21 @@ h2 {
   font-size: $font-size-lg;
   padding: 1em;
 }
+p{
+  padding: 1em;
+}
 svg {
   color: $color-base;
   margin:1em;
+}
+button {
+  background: none;
+  border: none;
+  font-family: $font-family-header;
+  font-size: $font-size-lg;
+  color:$color-base;
+  font-weight: $font-bold;
+  cursor: pointer;
 }
 .language-container {
   margin: 0 10px;
@@ -23,6 +35,12 @@ background-color: $color-primary;
   color: $color-base;
   border: $color-base solid 2px;
   @include border-radius(100%);
+}
+#language-list {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+
 }
 #sidebar-container {
   background-color:$color-primary;
