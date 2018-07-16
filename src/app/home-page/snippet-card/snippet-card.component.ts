@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnippetCardComponent implements OnInit {
 
+
+  @input() snippet;
+  showModal = false;
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  showDetails() {
+    this.showModal = true;
+  }
 }
